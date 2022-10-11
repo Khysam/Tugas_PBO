@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class coba {
+
+    public static void main(String[] args) {
+
+        int a; //definisi variabel a
+        int b; //definisi variabel b
+        float rata;
+
+        Scanner coba = new Scanner(System.in);
+        int p = 1;
+
+        while (p <= 1){
+
+            System.out.println("Hello Everyone!");
+            p++;
+        }
+        int x = 1;
+        do { //do while
+            System.out.println("My name is Khysam. Nice to meet ya.");
+            x++;
+        }
+        while (x <= 1);
+        System.out.println("Data Kontak : ");
+       String[][] kontak = {{"Khysam", "081138"}, {"Salma", "085831"}, {"Haykal", "082134"}};
+            for (int q = 0; q < kontak.length; q++){
+                System.out.println("Nama    : " +kontak[q][0]);
+                System.out.println("Nomor   : " +kontak[q][1]);
+
+            }
+
+        System.out.println("Masukkan Nilai a :");
+        a = coba.nextInt(); //input nilai a
+        System.out.println("Masukkan Nilai b :");
+        b = coba.nextInt(); //input nilai b
+        rata = (a + b) / 2; //menghitung rata-rata
+        System.out.println("Rata-rata = " +rata);
+
+        if (a > b){ //if conditional
+
+            System.out.println("Nilai a lebih besar daripada nilai b.");
+
+        }
+
+        else if (a < b){
+
+            System.out.println("Nilai a lebih kecil daripada nilai b.");
+
+        }
+
+        else{
+
+            System.out.println("Nilai a sama dengan daripada nilai b.");
+
+        }
+
+    }
+}
