@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	
+	int a; //definisi variabel a
+	int b; //definisi variabel b
+	int m;
+	int n;
+	float rata;
+	string nama[5]; //array satu dimensi
+	
+	int p = 1;
+	
+	while (p <= 1){ //while
+		
+		cout << "Hello Everyone!" << endl;
+		p++;
+	}
+	
+	int x = 1;
+  do { //do while
+    cout << "My name is Khysam. Nice to meet ya" << endl;
+    x++;
+  }
+  while (x <= 1);
+	
+	
+	string kontak[3][3] = {{"Khysam", "081138"}, {"Salma", "085831"}, {"Haykal", "082134"}};
+	
+
+	cout << "Masukkan nilai a : ";
+	cin >> a; //input variabel a
+	cout << "Masukkan nilai b : ";
+	cin >> b; //input variabel b
+	rata = (a + b) / 2;
+	cout << "Rata-rata = " << rata;
+	cout << endl;
+	
+	cout << "Nilai a = " << a << endl; //output
+	cout << "Nilai b = " << b << endl; //output
+	if (a > b){ //if conditional
+		
+		cout << "Nilai a lebih besar daripada nilai b.";
+		
+	}
+	
+	else if(a < b){
+		
+		cout << "Nilai a lebih kecil daripada nilai b.";
+		
+	}
+	
+	else{
+		
+		cout << "Nilai a sama dengan nilai b.";
+		
+	}
+	
+	return 0;
+  
+}
